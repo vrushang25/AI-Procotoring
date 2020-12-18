@@ -1,0 +1,271 @@
+<html>
+ <head>
+    <title>Video Streaming Demonstration</title>
+	<link rel="stylesheet" href="assets/css/bootsnav.css" media="all" />
+		<!-- Bootstrap -->
+		<link rel="stylesheet"  href="assets/bootstrap/css/bootstrap.min.css" media="all" />
+		<!-- Style CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
+		<!-- images -->
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<script src="http://media.mq.edu.au/mas240/js/gallery.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+    <style>
+	
+	
+	
+ .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+<!-- bootsrap  -->
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* vertical spacing between columns */
+
+[class*="col-"] {
+  margin-bottom: 30px;
+}
+
+.content {
+  height: 80%;
+  padding: 20px 20px 10px;
+  color: #fff;
+}
+
+
+/* Demo backgrounds and styling*/
+
+.colour-1 {
+  background: #483C46;
+  color: #fff;
+}
+
+.colour-2 {
+  background: #3C6E71;
+}
+
+.colour-3 {
+  background: #70AE6E;
+}
+
+.colour-4 {
+  background: #82204A;
+}
+
+.colour-5 {
+  background: #558C8C;
+}
+
+.colour-6 {
+  background: #917C78;
+}
+
+<!-- image gallery -->
+
+.gallery {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    text-align: left;
+	margin-left:0px;
+	align : left;
+	
+}
+
+
+<!-- header  -->
+* {box-sizing: border-box;}
+
+
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+</style>
+  </head>
+  
+  <body style="background-color:powderblue"> 
+  
+  <header style= "background-color:#A2A2D4">
+	<!-- Start Header Navigation -->
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+	                        <i class="fa fa-bars"></i>
+	                    </button>
+						<br>
+						<a class="navbar-brand" href="index.html"><img src="images/chat.png" class="logo logo-scrolled" alt=""></a>
+	                </div>
+	                <!-- End Header Navigation -->
+<div class="container-fluid">
+  <div class="row">
+  <h1 style="text-align: center ; font-family: cursive">Vision Coders</h1>
+	</div>
+	</div> 
+	                <!-- Collect the nav links, forms, and other content for toggling -->
+	                <div class="collapse navbar-collapse" id="navbar-menu">
+	                    <ul class="nav navbar-nav navbar-right" data-in="" data-out="">
+	                        
+	                        <li><a href="#about"><h4>About Us</h4></a></li>
+	                        <li><a href=""><h4>Contact us</h4></a></li>
+	                    </ul>
+	                </div><!-- /.navbar-collapse -->
+	            
+	        </nav>
+	        <!-- End Navigation -->
+	        <div class="clearfix"></div>
+		<!-- end header -->
+</header>
+	
+  <br>
+  <div class="container-fluid">
+  <div class="row">
+  
+    <h1 style="text-align: center">Exam video Demonstration</h1>
+	
+	 </div>
+</div>
+	 <div class="col-md-3 col-sm-5 col-xs-12" style="background-color:yellow;"> 
+	  <div class="content colour-1">
+	 Final Report:- 
+	 </div>
+	 </div>
+     <div class="col-md-6 col-sm-9 col-xs-16" style="background-color:lavender;"> 
+	  <div class="content colour-2">
+	 <img src="{{ url_for('video_feed') }}" class="center">
+	</div>
+	 </div>
+	  <div class="col-md-3 col-sm-5 col-xs-12" style="background-color:red;"> 
+	   <div class="content colour-1">
+	    
+
+	 <!-- other portion -->
+
+<div class="col-md-4 col-sm-5 col-xs-12">
+<img src="{{url_for('static', filename='face1.GIF')}}" class="gallery" style= "width:60px ; height:80px ; vertical-align:left" > <br> <br>
+
+<img src="{{url_for('static', filename='face2.GIF')}}" class="gallery" style= "width:60px" "height:80px" > <br> <br>
+
+<img src="{{url_for('static', filename='face3.GIF')}}" class="gallery" style= "width:60px" "height:80px"> <br> <br>
+
+<img src="{{url_for('static', filename='face4.GIF')}}" class="gallery" style= "width:60px" "height:80px"> <br> <br>
+
+<img src="{{url_for('static', filename='face1.GIF')}}" class="gallery" style= "width:60px" "height:80px">
+
+</div>
+
+<div class="col-md-4 col-sm-5 col-xs-12">
+<img src="{{url_for('static', filename='face1.GIF')}}" class="gallery" style= "width:60px ; height:80px ; vertical-align:left" > <br> <br>
+
+<img src="{{url_for('static', filename='face2.GIF')}}" class="gallery" style= "width:60px" "height:80px" > <br> <br>
+
+<img src="{{url_for('static', filename='face3.GIF')}}" class="gallery" style= "width:60px" "height:80px"> <br> <br>
+
+<img src="{{url_for('static', filename='face4.GIF')}}" class="gallery" style= "width:60px" "height:80px"> <br> <br>
+
+<img src="{{url_for('static', filename='face1.GIF')}}" class="gallery" style= "width:60px" "height:80px">
+
+</div>
+
+<div class="col-md-4 col-sm-5 col-xs-12">
+<img src="{{url_for('static', filename='face1.GIF')}}" class="gallery" style= "width:60px ; height:80px ; vertical-align:left" > <br> <br>
+
+<img src="{{url_for('static', filename='face2.GIF')}}" class="gallery" style= "width:60px" "height:80px" > <br> <br>
+
+<img src="{{url_for('static', filename='face3.GIF')}}" class="gallery" style= "width:60px" "height:80px"> <br> <br>
+
+<img src="{{url_for('static', filename='face4.GIF')}}" class="gallery" style= "width:60px" "height:80px"> <br> <br>
+
+<img src="{{url_for('static', filename='face1.GIF')}}" class="gallery" style= "width:60px" "height:80px">
+
+</div>
+
+ </div>
+  </div> 
+	<br>
+	
+	<button class="button button1" style="margin-left: 200px" > <a href= "javascript:close_window();">End Session </a></button>
+	<br>
+	<br>
+	<footer>
+	<div class="copyright-wrapper text-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p>Copyright@2020 Vision coders Inc. All Rights Reserved. </p>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</div><!-- ./end copyright-wrapper -->
+		</footer>
+	
+ 
+	
+	
+	<script>
+	function close_window() {
+  if (confirm("End Session?")) {
+    close();
+	
+  }
+}
+</script>
+	
+  </body>
+</html>
